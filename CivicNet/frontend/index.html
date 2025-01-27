@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CivicNet - Accueil</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      fetch("/header.html")
-        .then(response => response.text())
-        .then(data => {
-          document.body.insertAdjacentHTML("afterbegin", data);
-        });
-    });
-  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicNet - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.body.insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
 
     <main>
       <section id="hero">
-        <h2>Bienvenue sur CivicNet</h2>
-        <p>
+        <h2 class="sous-texte">Bienvenue sur CivicNet</h2>
+        <p class="sous-texte">
           Rejoignez la plateforme où citoyens et décideurs travaillent ensemble
           pour un avenir meilleur.
         </p>
