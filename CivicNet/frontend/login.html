@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Connexion - FranceConnect</title>
+    <style>
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .login-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background-color: #0030b3;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .login-button:hover {
+            background-color: #001e6f;
+        }
+
+        .login-container img {
+            height: 100px;
+            margin-right: px;
+        }
+
+        login-container a{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 90vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="assets/logo.jpg" alt="CivicNet">
+          <h1>AgoraNum</h1>
+        </div>
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="proposals.html">Propositions</a>
+          <a href="forum.html">Forum</a>
+          <a href="profile.html">Profil</a>
+          <a href="login.html">Connexion</a>
+        </nav>
+      </header>
+      <section>
+          <div class="login-container">
+              <img src="https://alliancesolidaire.org/wp-content/uploads/2021/07/fc_avatar.png" alt="Logo FranceConnect">
+              <a href="https://app.franceconnect.gouv.fr/api/v1/authorize?scope=openid+identite_pivot+email&state=BTbwsYOWii1qvO6GD2FiSCAnUUUWGCjfdZ3N6hVW4TY.urxkjbGJU-E.c45l6FyES22BruGMcXcxTg&response_type=code&client_id=b655db4d48ad1ef4a287c84bf05364726e55cc68aadd3579fb469c971490ca73&redirect_uri=https%3A%2F%2Fauth.service-public.fr%2Frealms%2Fservice-public%2Fbroker%2Ffranceconnect-particulier%2Fendpoint&acr_values=eidas1&nonce=7C33B17AE825F68BBADC47E03B5FCBA91A95192EAEE131E6F6AE5C2AABE8C9B6" class="login-button">
+                  Se connecter avec FranceConnect
+              </a>
+          </div>
+      </section>
+</body>
+</html>
