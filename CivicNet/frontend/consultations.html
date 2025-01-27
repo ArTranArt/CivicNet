@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgoraNum - Consultations Locales</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.jpg" alt="AgoraNum" />
+        <h1>AgoraNum</h1>
+      </div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="proposals.html">Propositions</a>
+        <a href="forum.html">Forum</a>
+        <a href="profile.html">Profil</a>
+        <a href="consultations.html" class="active">Consultations</a>
+        <a href="rewards.html">Reconnaissance</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="consultations">
+        <h2>Consultations Locales</h2>
+        <p>
+          Participez aux consultations locales et contribuez aux décisions qui
+          façonnent votre communauté.
+        </p>
+
+        <div class="consultation-form">
+          <h3>Participez à une Consultation</h3>
+          <form id="consultationForm">
+            <label for="topic">Thème de la Consultation :</label>
+            <input
+              type="text"
+              id="topic"
+              placeholder="Exemple : Aménagement des espaces verts"
+              required
+            />
+
+            <label for="argument">Votre Argument :</label>
+            <textarea
+              id="argument"
+              placeholder="Développez votre position..."
+              required
+            ></textarea>
+
+            <button type="submit">Soumettre</button>
+          </form>
+        </div>
+
+        <div class="consultation-results">
+          <h3>Résultats en Cours</h3>
+          <p>
+            Explorez les consultations en cours et interagissez avec les
+            contributions d’autres citoyens.
+          </p>
+          <div class="consultation-item">
+            <h4>Aménagement des Espaces Verts</h4>
+            <p>Arguments positifs : 25 | Arguments négatifs : 15</p>
+            <button>Voir les détails</button>
+          </div>
+          <div class="consultation-item">
+            <h4>Réduction de la Circulation Automobile</h4>
+            <p>Arguments positifs : 40 | Arguments négatifs : 10</p>
+            <button>Voir les détails</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 AgoraNum. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
