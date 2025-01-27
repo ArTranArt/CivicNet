@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CivicNet - Propositions</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img src="assets/logo.jpg" alt="CivicNet">
-      <h1>CivicNet</h1>
-    </div>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="proposals.html">Propositions</a>
-      <a href="forum.html">Forum</a>
-      <a href="consultations.html">Consultation</a>
-      <a href="rewards.html">Reward</a>
-      <a href="suivi.html">Suivi</a>
-      <a href="events.html">Événements</a>
-      <a href="profile.html">Profil</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicNet - Propositions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.body.insertAdjacentHTML("afterbegin", data);
+          });
+      });
+    </script>
 
-  <main>
-    <section id="proposals">
-      <h2>Propositions citoyennes</h2>
-      <form id="proposalForm">
-        <input type="text" id="proposalTitle" placeholder="Titre de la proposition" required>
-        <textarea id="proposalDescription" placeholder="Description de votre proposition..." required></textarea>
-        <button type="submit">Soumettre</button>
-      </form>
-      <div id="proposalList">
-        <h3>Propositions existantes</h3>
-        <div class="proposal">
+    <main>
+      <section id="proposals">
+        <h2>Propositions citoyennes</h2>
+        <form id="proposalForm">
+          <input
+            type="text"
+            id="proposalTitle"
+            placeholder="Titre de la proposition"
+            required
+          />
+          <textarea
+            id="proposalDescription"
+            placeholder="Description de votre proposition..."
+            required
+          ></textarea>
+          <button type="submit">Soumettre</button>
+        </form>
+        <div id="proposalList">
+          <h3>Propositions existantes</h3>
+          <div class="proposal">
             <h4>Créer des espaces verts urbains</h4>
-            <p>Cette proposition vise à aménager plus de zones vertes dans les centres-villes pour favoriser la biodiversité et le bien-être des citoyens.</p>
-        </div>
-        <div class="proposal">
+            <p>
+              Cette proposition vise à aménager plus de zones vertes dans les
+              centres-villes pour favoriser la biodiversité et le bien-être des
+              citoyens.
+            </p>
+          </div>
+          <div class="proposal">
             <h4>Augmenter le budget éducatif</h4>
-            <p>Proposition pour allouer des fonds supplémentaires aux écoles publiques pour moderniser les équipements et réduire les inégalités.</p>
+            <p>
+              Proposition pour allouer des fonds supplémentaires aux écoles
+              publiques pour moderniser les équipements et réduire les
+              inégalités.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <p>© 2025 CivicNet. Tous droits réservés.</p>
-  </footer>
-</body>
+    <footer>
+      <p>© 2025 CivicNet. Tous droits réservés.</p>
+    </footer>
+  </body>
 </html>
