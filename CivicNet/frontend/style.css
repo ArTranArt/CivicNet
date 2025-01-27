@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 body {
@@ -43,7 +43,7 @@ header nav a.active {
 }
 
 #hero {
-  background: url('assets/background.jpg') no-repeat center center/cover;
+  background: url("assets/background.jpg") no-repeat center center/cover;
   text-align: center;
   color: white;
   padding: 3rem 2rem;
@@ -114,7 +114,6 @@ footer {
 .forum-category a:hover {
   text-decoration: underline;
 }
-
 
 /* Profil utilisateur */
 #profile {
@@ -196,8 +195,6 @@ footer {
   color: #555;
 }
 
-
-
 /* Section Propositions */
 #proposals {
   padding: 2rem;
@@ -222,7 +219,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-#proposalForm input, 
+#proposalForm input,
 #proposalForm textarea {
   width: 100%;
   padding: 0.8rem;
@@ -277,4 +274,87 @@ footer {
 #proposalList .proposal p {
   font-size: 1rem;
   color: #555;
+}
+
+/* Centrage de #forum */
+#forum {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  justify-content: center;
+  align-items: center; /* Centre horizontalement */
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.forum-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forum-category {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.forum-category h3 {
+  margin-top: 0;
+}
+
+.forum-category a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forum-category a:hover {
+  text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+
+/* Barre de recherche */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#search-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+#search-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
 }

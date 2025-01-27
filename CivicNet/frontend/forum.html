@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgoraNum - Forum</title>
+  <title>CivicNet - Forum</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="logo">
       <img src="assets/logo.jpg" alt="AgoraNum">
-      <h1>AgoraNum</h1>
+      <h1>CivicNet</h1>
     </div>
     <nav>
       <a href="index.html">Accueil</a>
@@ -25,18 +25,24 @@
       <h2>Forum de Discussion</h2>
       <p>Participez à des discussions constructives autour des sujets qui vous tiennent à cœur.</p>
 
+      <!-- Barre de recherche -->
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Rechercher un sujet...">
+        <button id="search-button">Rechercher</button>
+      </div>
+
       <div class="forum-categories">
-        <div class="forum-category">
+        <div class="forum-category" data-category="environnement">
           <h3>Environnement</h3>
           <p>Discutez des solutions pour protéger notre planète.</p>
           <a href="#">Voir les discussions</a>
         </div>
-        <div class="forum-category">
+        <div class="forum-category" data-category="éducation">
           <h3>Éducation</h3>
           <p>Partagez vos idées sur l'amélioration du système éducatif.</p>
           <a href="#">Voir les discussions</a>
         </div>
-        <div class="forum-category">
+        <div class="forum-category" data-category="santé">
           <h3>Santé</h3>
           <p>Échangez sur les politiques de santé publique.</p>
           <a href="#">Voir les discussions</a>
@@ -46,7 +52,9 @@
   </main>
 
   <footer>
-    <p>© 2025 AgoraNum. Tous droits réservés.</p>
+    <p>© 2025 CivicNet. Tous droits réservés.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
