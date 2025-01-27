@@ -278,3 +278,54 @@ footer {
   font-size: 1rem;
   color: #555;
 }
+
+
+
+#tracking {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tracking h2 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1.5rem;
+}
+
+.proposal {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proposal h3 {
+  font-size: 1.5rem;
+  color: #004aad;
+  margin-bottom: 0.5rem;
+}
+
+.proposal p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.proposal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.proposal ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.proposal ul li:last-child {
+  border-bottom: none;
+}
